@@ -11,48 +11,48 @@ import "./styles/index.css";
 </div>
 <div class="wrapper">
   <div class="hero">
-
     <div class="page-title">Offshore Software Development Company</div>
     <div class="home-section">
-      <div class="home-text">Ordnungskraft exists to empower businesses to go beyond their limitations and achieve their wildest dreams through the transformative power of innovative, high-quality software solutions.
-        
+      <div class="home-text">
+        Ordnungskraft exists to empower businesses to go beyond their
+        limitations and achieve their wildest dreams through the transformative
+        power of innovative, high-quality software solutions.
       </div>
-      <img src="/homepage-map.svg" alt="">
+      <img src="/homepage-map.svg" alt="" />
     </div>
     <a href="/contact"> <button> Schedule a call today </button></a>
   </div>
- 
+
   <div class="full-width about-us-desktop">
     <!-- <img src="/Home.svg" alt="" /> -->
     <object data="/Home.svg" type="image/svg+xml"></object>
 
-        <!-- <img src="/Home.svg" alt="" /> -->
-
+    <!-- <img src="/Home.svg" alt="" /> -->
   </div>
 </div>
-  <Footer />
+<Footer />
 
-  <style>
-    .sign {
-      position: absolute;
-      left: 0;
-      top: 70px;
-      z-index: -1;
+<style>
+  .sign {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: -1;
+  }
+
+  .about-hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 40%;
+    padding-right: 5%;
+    justify-content: end;
+    .our-story-text {
+      font-size: 22px;
     }
+  }
 
-    .about-hero-section {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-      padding-left: 40%;
-      padding-right: 5%;
-      justify-content: end;
-      .our-story-text {
-        font-size: 22px;
-      }
-    }
-
-    button{
+  button {
     font-size: 60px;
     background-color: black;
     color: white;
@@ -64,53 +64,51 @@ import "./styles/index.css";
     font-size: 16px;
     margin-left: 30%;
     margin-top: 20px;
-}
-    .home-text {
+  }
+  .home-text {
     font-size: 34px;
     margin-left: 30%;
-}
-    .full-width {
-     
-      width: 100%;
-      margin-top: -270px;
-
-      object {
-        width: 100%;
-      }
-    }
-    .about-us-desktop {
-      svg {
-        width: 100%;
-      }
-    }
-    .about-us-mobile {
-      display: none;
-      svg {
-        display: none;
-      }
-    }
-
-    /* @media screen and (max-width: 480px) {
-  body {
-    background-color: red !important;
   }
-} */
-.hero{
-  position: relative;
-  z-index: 2000;
-}
-.home-section {
+  .full-width {
+    width: 100%;
+    margin-top: -270px;
+    object {
+      width: 100%;
+    }
+    svg{
+      width: 100%;
+    }
+  }
+
+  .hero {
+    position: relative;
+    z-index: 2000;
+  }
+  .home-section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
-}
-
-@media (max-width: 480px){
-    body{
-      background-color: blue;
-    }
   }
 
-  </style>
-
+  @media (max-width: 768px) {
+    .page-title {
+    font-family: BlackMango;
+    font-size: 40px;
+    margin-left: 10%;
+    padding: 30px;
+    /* text-align: center; */
+    font-weight: bold;
+}
+.home-text{
+    font-size: 24px;
+    margin-left: 105px;
+}
+.home-section {
+    flex-wrap: wrap;
+}
+.full-width {
+    margin-top: -100px;
+}
+  }
+</style>
