@@ -10,14 +10,17 @@ import "./styles/index.css";
   <img src="/Union.svg" alt="" srcset="" />
 </div>
 <div class="wrapper">
-  <div class="page-title">Offshore Software Development Company</div>
-  <div class="home-section">
-    <div class="home-text">Ordnungskraft exists to empower businesses to go beyond their limitations and achieve their wildest dreams through the transformative power of innovative, high-quality software solutions.
+  <div class="hero">
 
+    <div class="page-title">Offshore Software Development Company</div>
+    <div class="home-section">
+      <div class="home-text">Ordnungskraft exists to empower businesses to go beyond their limitations and achieve their wildest dreams through the transformative power of innovative, high-quality software solutions.
+        
+      </div>
+      <img src="/homepage-map.svg" alt="">
     </div>
-<img src="/homepage-map.svg" alt="">
-</div>
-<a href="/contact"> <button> Schedule a call today </button></a>
+    <a href="/contact"> <button> Schedule a call today </button></a>
+  </div>
  
   <div class="full-width about-us-desktop">
     <img src="/Home.svg" alt="" />
@@ -65,7 +68,9 @@ import "./styles/index.css";
     margin-left: 30%;
 }
     .full-width {
+     
       width: 100%;
+      margin-top: -270px;
       img {
         width: 100%;
       }
@@ -87,7 +92,10 @@ import "./styles/index.css";
     background-color: red !important;
   }
 } */
-
+.hero{
+  position: relative;
+  z-index: 2000;
+}
 .home-section {
     display: flex;
     justify-content: center;
