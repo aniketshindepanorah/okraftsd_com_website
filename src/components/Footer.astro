@@ -1,0 +1,189 @@
+<!-- src/components/Footer.astro -->
+ <div class="wrapper">
+
+<div class="footer">
+  <div class="newsletter">
+    <form class="subscription-form" id="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required />
+      <button class="submit-btn" type="submit">Subscribe to our newsletter</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("newsletter-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Subscribed! (This is a demo)");
+        });
+    </script>
+  </div>
+  <div class="menus">
+    <div class="menu">
+      <div class="menu-title">Industries</div>
+      <div class="menu-items">
+        <li>Manufacturing</li>
+        <li>BFSI</li>
+        <li>Healthcare</li>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu-title">Company</div>
+      <div class="menu-items">
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Home</li>
+        <li>Careers</li>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu-title">Solutions</div>
+      <div class="menu-items">
+        <li>Collaboration Models</li>
+        <li>Hire</li>
+        <li>Case Studies</li>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu-title">Contact</div>
+      <div class="menu-items">
+        <li>Mail Us- <br /> <span>hello@ordnungskraftsoftwaredev.com</span></li>
+        <li>Call Us- <br /> <span>9988776655</span></li>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <div>
+      <p class="copyright-text">
+        2024 Ordnungskraft Software Development. All Rights Reserved.
+        <span>Privacy Policy</span>
+      </p>
+    </div>
+    <div class="socials">
+      <img src="/svg/linkedIn.svg" alt="" />
+      <img src="/svg/twitter.svg" alt="" />
+      <img src="/svg/facebook.svg" alt="" />
+      <img src="/svg/instagram.svg" alt="" />
+    </div>
+  </div>
+</div>
+</div>
+
+<style>
+  .footer {
+    background-image: url("/footer-curve.png");
+    /* background-color: red; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    padding-top:10%;
+    color: white;
+    width: 100%;
+  }
+
+  .menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .menu-title {
+      font-family: BlackMango;
+      font-size: 20px;
+    }
+
+    .menu-items {
+      font-family: Nunito;
+      list-style-type: none;
+      margin-top: 20px;
+
+      li {
+        margin-top: 20px;
+        cursor: pointer;
+
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .copyright-text {
+      margin-top: 40px;
+      font-family: BlackMango;
+
+      span {
+        padding-left: 40px;
+        font-family: Nunito;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    .socials {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      img {
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .copyright-text::before {
+    content: "©";
+  }
+
+  /* Newsletter */
+  .newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-left: 300px;
+  }
+
+  .subscription-form {
+    display: flex;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+  input[type="email"] {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ffffff;
+    color: black;
+    font-size: 16px;
+    outline: none;
+    flex-grow: 1;
+  }
+
+  .submit-btn {
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .footer-sign {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+  }
+
+</style>
+

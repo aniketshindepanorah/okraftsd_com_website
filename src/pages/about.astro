@@ -1,0 +1,100 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import "./styles/index.css";
+---
+
+<!-- src/pages/about.astro -->
+<Navbar />
+<div class="sign">
+  <img src="/Union.svg" alt="" srcset="" />
+</div>
+<div class="wrapper">
+  <div class="page-title">Our Story</div>
+  <div class="about-hero-section">
+    <div class="our-story-text">
+      Every great idea begins with a spark-a flicker of inspiration. But turning
+      that dream into reality can be challenging. At Ordnungskraft, we
+      understand the frustration of having a vision without the tools to bring
+      it to life. We've been there, facing the unknown. Ordnungskraft was built
+      on the belief that every business, no matter its size, can achieve
+      greatness through the power of technology. We've seen how a single
+      software solution can transform a company and even reshape industries. Our
+      approach is simple yet powerful: we listen. We listen to your aspirations,
+      challenges, and dreams, then craft bespoke software solutions tailored to
+      your business. We don't just meet expectations; we exceed them. Our
+      clients are our partners in innovation. We celebrate their successes,
+      learn from challenges, and grow together. From startups to established
+      enterprises, we've collaborated with visionaries from all walks of life.
+      We've watched our software empower businesses to streamline operations,
+      connect with new audiences, and achieve remarkable growth. But our
+      greatest reward is seeing the spark in our clients' eyes as their vision
+      comes to life through the solutions we build together. This is the story
+      of Ordnungskraft-a story of passion, collaboration, and excellence. And
+      it's a story we invite you to be a part of.
+    </div>
+    <a href="/contact"> <button> Schedule a call today </button></a>
+  </div>
+  <!-- <div class="full-width about-us-mobile">
+    <img src="/mobile.svg" alt="" />
+  </div> -->
+  <div class="full-width about-us-desktop">
+    <img src="/desktop-au.svg" alt="" />
+  </div>
+  <Footer />
+
+  <style>
+    .sign {
+      position: absolute;
+      left: 0;
+      top: 70px;
+      z-index: -1;
+    }
+    button {
+      background-color: black;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      width: 30%;
+      font-size: 16px;
+    }
+
+    .about-hero-section {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding-left: 40%;
+      padding-right: 5%;
+      justify-content: end;
+      .our-story-text {
+        font-size: 22px;
+      }
+    }
+    .full-width {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .about-us-desktop {
+      svg {
+        width: 100%;
+      }
+    }
+    .about-us-mobile {
+      display: none;
+      svg {
+        display: none;
+      }
+    }
+
+    /* @media screen and (max-width: 480px) {
+  body {
+    background-color: red !important;
+  }
+} */
+
+  </style>
+</div>

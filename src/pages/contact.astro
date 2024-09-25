@@ -1,0 +1,92 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import "./styles/index.css";
+---
+
+<!-- src/pages/contact.astro -->
+<Navbar />
+<div class="contact-sign">
+  <img src="/Union.svg" alt="" srcset="">
+</div>
+<div class="wrapper">
+  <div class="page-title">Contact Us</div>
+  <div class="contact-us-sections">
+    <div class="left">
+      <form action="" method="post">
+
+        <label for="name">Name:</label>
+        <input placeholder="Name" type="text" id="name" name="name" required />
+    
+        <br />
+        <br />
+        <label for="email">Email Address:</label>
+        <input placeholder="Email Address" type="email" id="email" name="email" required />
+        <br />
+        <br />
+        <label for="company">Company:</label>
+        <input placeholder="Company" type="text" id="company" name="company" />
+        <br />
+        <br />
+        <label for="message">Message:</label>
+        <textarea placeholder="Message" id="message" name="message" rows="5" required></textarea>
+        <br />
+        <br />
+        <input type="submit" value="Submit Request" />
+      </form>
+    </div>
+    <div class="right">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868724.2699651383!2d71.75765319367183!3d18.75125685608831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcfc41e9c9cd6f9%3A0x1b2f22924be04fb6!2sMaharashtra%2C%20India!5e0!3m2!1sen!2s!4v1727265451564!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </div>
+  </div>
+</div>
+<Footer />
+
+<style>
+  .contact-sign{
+    position: absolute; 
+    left: 0;
+    z-index: -1;
+  }
+    .contact-us-sections{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 30px;
+    }
+  form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  label {
+    display: none;
+    margin-bottom: 10px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    box-shadow: 4px 4px 4px 0px #00000040;
+  }
+  input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 14px;
+  }
+  .right{
+    iframe{
+        border-radius: 20px;
+    }
+  }
+</style>
