@@ -44,73 +44,58 @@ import "./styles/index.css";
     <!-- <img src="/desktop-au.svg" alt="" /> -->
   </div>
 </div>
-  <Footer />
+<Footer />
 
-  <style>
-    .sign {
-      position: absolute;
-      left: 0;
-      top: 70px;
-      z-index: -1;
+<style>
+  .sign {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: -1;
+  }
+ 
+
+  .about-hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 28%;
+    padding-right: 5%;
+    justify-content: end;
+    .our-story-text {
+      font-size: 22px;
     }
-    button {
-      background-color: black;
-      color: white;
-      padding: 15px 20px;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      width: 30%;
+  }
+  .full-width {
+    width: 100%;
+    margin-top: -400px;
+    object {
+      width: 100%;
+    }
+  }
+  .about-us-desktop {
+    svg {
+      width: 100%;
+    }
+  }
+  .about-us-mobile {
+    display: none;
+    svg {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .about-hero-section {
+      padding-left: 12%;
+    }
+    .our-story-text {
       font-size: 16px;
     }
-
-    .about-hero-section {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-      padding-left: 40%;
-      padding-right: 5%;
-      justify-content: end;
-      .our-story-text {
-        font-size: 22px;
-      }
+    .page-title {
+      margin-left: 8%;
     }
-    .full-width {
-      width: 100%;
-      object {
-        width: 100%;
-      }
+    object {
+      margin-top: -100px;
     }
-    .about-us-desktop {
-      svg {
-        width: 100%;
-      }
-    }
-    .about-us-mobile {
-      display: none;
-      svg {
-        display: none;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .about-hero-section[data-astro-cid-kh7btl4r] {
-   
-   padding-left: 12%;
   }
-.our-story-text {
-   font-size: 16px;
-}
-
-.page-title {
-   margin-left: 8%;
-}
-button{
-   font-size: 12px;
-}
-object {
-   margin-top: -100px;
-}
-  }
-  </style>
-
+</style>

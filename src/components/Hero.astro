@@ -1,0 +1,62 @@
+<!-- src/pages/about.astro -->
+<div class="sign">
+  <img src="/Union.svg" alt="" srcset="" />
+</div>
+<div class="wrapper">
+  <div class="page-title">Offshore Software Development Company</div>
+  <div class="hero">
+    <div class="home-section">
+      <div class="home-text">
+        Ordnungskraft exists to empower businesses to go beyond their
+        limitations and achieve their wildest dreams through the transformative
+        power of innovative, high-quality software solutions.
+      </div>
+      <img src="/homepage-map.svg" alt="" />
+    </div>
+    <a href="/contact"> <button> Schedule a call today </button></a>
+  </div>
+</div>
+
+<style>
+  .sign {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: -1;
+  }
+  .home-text {
+    font-size: 34px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2000;
+    margin-left: 20%;
+  }
+  .home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-family: BlackMango;
+      font-size: 40px;
+      margin-left: 10%;
+      padding: 30px;
+      /* text-align: center; */
+      font-weight: bold;
+    }
+    .home-text {
+      font-size: 24px;
+      margin-left: 105px;
+    }
+    .home-section {
+      flex-wrap: wrap;
+    }
+  }
+</style>
