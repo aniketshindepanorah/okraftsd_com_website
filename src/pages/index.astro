@@ -17,7 +17,7 @@ import Hero from "../components/Hero.astro";
 <style>
   .full-width {
     width: 100%;
-    margin-top: -270px;
+    margin-top: -10%;
     object {
       width: 100%;
     }
@@ -25,9 +25,12 @@ import Hero from "../components/Hero.astro";
       width: 100%;
     }
   }
+
   @media (max-width: 768px) {
+    /* Styles for tablets and mobile */
     .full-width {
-      margin-top: -100px;
+      width: 100%;
+      margin-top: -150px !important;
     }
   }
 </style>
