@@ -1,0 +1,123 @@
+<section class="testimonials-section">
+  <div class="section-bg">
+    <object data="/testimonialsBg.svg" type="image/svg+xml"></object>
+  </div>
+  <div class="section-content">
+    <div class="section-title">Client Testimonials</div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="/testimoni (1).png" alt="Testimonial 1" />
+        <div class="card-title">John Doe</div>
+        <div class="company-title">CEO XYZ Company</div>
+        <div class="card-content">
+          Working with Ordnungskraft has been a game-changer for our business.
+          Their software not only transformed our operations but also helped us
+          scale efficiently. The team's attention to detail and dedication to
+          understanding our needs made all the difference. We consider them a
+          true partner in our growth.
+        </div>
+      </div>
+      <div class="card">
+        <img class="image-2" src="/testimoni (2).png" alt="Testimonial 2" />
+        <div class="card-title">John Doe</div>
+        <div class="company-title">CEO XYZ Company</div>
+        <div class="card-content">
+          Ordnungskraft delivered a solution that exceeded our expectations.
+          Their team was responsive, collaborative, and committed to ensuring
+          our satisfaction every step of the way. The software they developed
+          streamlined our processes and improved productivity.
+        </div>
+      </div>
+      <div class="card">
+        <img src="/testimoni (3).png" alt="Testimonial 3" />
+        <div class="card-title">John Doe</div>
+        <div class="company-title">CEO XYZ Company</div>
+        <div class="card-content">
+          What sets Ordnungskraft apart is their genuine partnership approach.
+          They took the time to understand our goals and challenges and provided
+          a custom solution that fit perfectly. Their expertise and dedication
+          to quality have had a lasting impact on our business. We couldn't be
+          happier with the outcome
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+ .testimonials-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  .image-2 {
+    width: 9vw;
+  }
+  img {
+    width: 6vw;
+    margin-bottom: 10px;
+  }
+
+  .company-title {
+    font-family: BlackMango;
+    font-weight: 400;
+    font-size: 1vw;
+    margin-bottom: 10px;
+  }
+  .card-content {
+    font-family: Nunito;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .section-title {
+    color: white;
+    padding-top: 17vw;
+  }
+  .section-bg {
+    position: absolute;
+    width: var(--section-width);
+    margin-top: -200px;
+    z-index: -2;
+    object {
+      width: 100%;
+    }
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 20px; */
+
+    padding: 0 8%;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .card {
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    width: 25vw;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    background:
+      linear-gradient(#242424, #0a090a) padding-box,
+      linear-gradient(0deg, #20202000, #ffffff) border-box;
+    border: 1px solid transparent;
+    /* img{
+          width: 10vw;
+          text-align: center;
+      } */
+  }
+  .card-title {
+    font-size: 1.2vw;
+    font-family: BlackMango;
+    font-weight: bold;
+  }
+</style>

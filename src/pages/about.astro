@@ -1,0 +1,83 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import "./styles/index.css";
+import VisionMission from "../components/VisionMission.astro";
+import Services from "../components/Services.astro";
+import Achievements from "../components/Achievements.astro";
+import Worldwide from "../components/Worldwide.astro";
+import OurNumbers from "../components/OurNumbers.astro";
+import FoundingMembers from "../components/FoundingMembers.astro";
+import CompanyValues from "../components/CompanyValues.astro";
+---
+
+<!-- src/pages/about.astro -->
+<Navbar />
+<div class="sign">
+  <img src="/Union.svg" alt="" srcset="" />
+</div>
+<div class="wrapper">
+  <div class="page-title">Our Story</div>
+  <div class="about-hero-section">
+    <div class="our-story-text">
+      Every great idea begins with a spark-a flicker of inspiration. But turning
+      that dream into reality can be challenging. At Ordnungskraft, we
+      understand the frustration of having a vision without the tools to bring
+      it to life. We've been there, facing the unknown. Ordnungskraft was built
+      on the belief that every business, no matter its size, can achieve
+      greatness through the power of technology. We've seen how a single
+      software solution can transform a company and even reshape industries. Our
+      approach is simple yet powerful: we listen. We listen to your aspirations,
+      challenges, and dreams, then craft bespoke software solutions tailored to
+      your business. We don't just meet expectations; we exceed them. Our
+      clients are our partners in innovation. We celebrate their successes,
+      learn from challenges, and grow together. From startups to established
+      enterprises, we've collaborated with visionaries from all walks of life.
+      We've watched our software empower businesses to streamline operations,
+      connect with new audiences, and achieve remarkable growth. But our
+      greatest reward is seeing the spark in our clients' eyes as their vision
+      comes to life through the solutions we build together. This is the story
+      of Ordnungskraft-a story of passion, collaboration, and excellence. And
+      it's a story we invite you to be a part of.
+    </div>
+    <a href="/contact"> <button> Schedule a call today </button></a>
+  </div>
+  
+  <VisionMission />
+  <CompanyValues />
+  <Achievements />
+  <Worldwide />
+  <OurNumbers />
+  <FoundingMembers />
+  </div>
+</div>
+<Footer />
+
+<style>
+  .sign {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: -1;
+  }
+ 
+
+  .about-hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 28%;
+    padding-right: 5%;
+    justify-content: end;
+    .our-story-text {
+      font-size: 22px;
+    }
+  }
+  .full-width {
+    width: 100%;
+    margin-top: -20%;
+    object {
+      width: 100%;
+    }
+  }
+</style>

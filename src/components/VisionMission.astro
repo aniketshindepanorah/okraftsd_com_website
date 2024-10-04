@@ -1,0 +1,108 @@
+<section class="vision-section">
+  <div class="section-bg">
+    <object data="/WhyUsBg.svg" type="image/svg+xml"></object>
+</div>
+<div class="cards">
+  <div class="vision-card">
+    <div class="section-title">Vision</div>
+    <div class="card">
+      <object data="/Glare.svg" type="image/svg+xml"></object>
+
+      <div class="card-content">Our vision is to lead the software development industry, not only by being recognized but by redefining what is possible. We will be the driving force behind a new era of software innovation, consistently delivering transformative results and setting the standard for client-centricity.</div>
+    </div>
+  </div>  
+
+  <div class="vision-card">
+    <div class="section-title">Mission</div>
+    <div class="card">
+      <object data="/Glare.svg" type="image/svg+xml"></object>
+
+      <div class="card-content">Our mission is to be the trusted partner in innovation, helping businesses bring their software visions to life, providing end-to-end solutions, technical expertise, and unwavering commitment to client success.</div>
+    </div>
+  </div>
+
+  <div class="vision-card">
+    <div class="section-title">Values</div>
+    <div class="card">
+      <object data="/Glare.svg" type="image/svg+xml"></object>
+
+      <div class="card-content">We create innovative solutions that bring your boldest visions to life. With unmatched technical expertise, client focus, and a passion for innovation, we deliver high-quality software that exceeds expectations. From concept to launch and beyond, we ensure your success in the digital world.</div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<style>
+  .vision-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    margin-bottom: 130px;
+  }
+  .vision-card {
+    display: flex;
+    flex-direction: column;
+}
+    .card-content{
+        font-size: 1vw;
+    }
+  .section-title {
+    color: white;
+    padding-top: 14vw;
+  }
+  .section-bg {
+    position: absolute;
+    width: var(--section-width);
+    margin-top: -18vw;
+    z-index: -1;
+    object {
+      width: 100%;
+    }
+  }
+  .section-title{
+    font-size: 3vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    padding: 0 8%;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .card {
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 20px;
+    width: 25vw;
+    text-align: center;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 24px;
+
+    background: linear-gradient(#242424, #0a090a) padding-box,
+              linear-gradient(0deg, #20202000, #ffffff) border-box;
+  border:1px solid transparent;
+
+    object{
+        width: 10vw;
+    }
+  }
+  .card-title {
+    font-size: 1.3vw;
+    font-family: BlackMango;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+</style>

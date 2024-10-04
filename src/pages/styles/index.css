@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("/fonts/black-mango/BlackMango-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("/fonts/black-mango/BlackMango-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("/fonts/black-mango/BlackMango-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("/fonts/black-mango/BlackMango-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("/fonts/black-mango/BlackMango-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("/fonts/black-mango/BlackMango-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("/fonts/black-mango/BlackMango-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("/fonts/black-mango/BlackMango-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("/fonts/black-mango/BlackMango-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+:root {
+  --section-width: 100%;
+}
+
+body {
+  width: var(--section-width);
+  /* max-width: 1000px; */
+  /* width: 100%; */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-family: BlackMango;
+  font-size: 45px;
+  /* margin-left: 10%; */
+  padding: 50px 0 0 0;
+  font-weight: bold;
+}
+button {
+  font-size: 60px;
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 260px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+
+.section-title {
+  font-family: BlackMango;
+  font-size: 3.4vw;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: right;
+  padding-right: 22.5vw;
+}
