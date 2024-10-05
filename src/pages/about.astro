@@ -17,7 +17,7 @@ import CompanyValues from "../components/CompanyValues.astro";
   <img src="/Union.svg" alt="" srcset="" />
 </div>
 <div class="wrapper">
-  <div class="page-title">Our Story</div>
+  <div class="page-title ">Our Story</div>
   <div class="about-hero-section">
     <div class="our-story-text">
       Every great idea begins with a spark-a flicker of inspiration. But turning
@@ -46,14 +46,17 @@ import CompanyValues from "../components/CompanyValues.astro";
   <VisionMission />
   <CompanyValues />
   <Achievements />
-  <Worldwide />
-  <OurNumbers />
+  <!-- <Worldwide /> -->
+  <!-- <OurNumbers /> -->
   <FoundingMembers />
   </div>
 </div>
 <Footer />
 
 <style>
+  .page-title {
+    margin-left: 10% !important
+  }
   .sign {
     position: absolute;
     left: 0;
